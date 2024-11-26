@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Maria Goncharova</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .experience-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 4px solid var(--color-purple);
+        }
+
+        .experience-card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .experience-title {
+            color: var(--color-dark);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-date {
+            color: var(--color-purple);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .experience-location {
+            color: var(--color-teal);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .experience-details {
+            list-style-type: none;
+        }
+
+        .experience-details li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .experience-details li::before {
+            content: '•';
+            color: var(--color-purple);
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">MG</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="experience.html" class="active">Experience</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1 class="glitch-text">Experience</h1>
+        
+        <div class="experience-card">
+            <h2 class="experience-title">Software Developer Intern</h2>
+            <div class="experience-date">May 2024 – Aug 2024</div>
+            <div class="experience-location">DWELLoptimal, Orlando, FL</div>
+            <ul class="experience-details">
+                <li>Lead a team of developers towards successfully resolving many frontend and backend bugs.</li>
+                <li>Collaborated with other departments daily, such as researching web scraping tools for a colleague.</li>
+                <li>Utilized skills in JavaScript, Nest.js, and React.js to successfully complete programming tasks.</li>
+                <li>Communicated with my team on collaborative bug fixes and creation processes of new tools.</li>
+                <li>Developed new features for a web application.</li>
+            </ul>
+        </div>
+
+        <div class="experience-card">
+            <h2 class="experience-title">Introduction to C Course</h2>
+            <div class="experience-date">Aug 2023 – Dec 2023</div>
+            <div class="experience-location">University of Central Florida, Orlando, FL</div>
+            <ul class="experience-details">
+                <li>Earned an A in the course.</li>
+                <li>Studied C under a respected professor.</li>
+                <li>Wrote several programs throughout the course using C.</li>
+                <li>Gained proficiency in the language.</li>
+                <li>Successfully managed class assignments, ensuring timely completion.</li>
+            </ul>
+        </div>
+
+        <div class="experience-card">
+            <h2 class="experience-title">Oracle APEX Course</h2>
+            <div class="experience-date">2023</div>
+            <div class="experience-location">Orlando, FL</div>
+            <ul class="experience-details">
+                <li>Completed assignments designed to gain proficiency in Oracle APEX.</li>
+                <li>Followed instructions for an Oracle APEX Lab.</li>
+                <li>Created several functional websites such as a shopping website.</li>
+            </ul>
+        </div>
+
+        <div class="experience-card">
+            <h2 class="experience-title">Summer Intern</h2>
+            <div class="experience-date">Jun 2022 – Aug 2022</div>
+            <div class="experience-location">CareerSource Florida, Orlando, FL</div>
+            <ul class="experience-details">
+                <li>Created a personalized website using HTML and CSS.</li>
+                <li>Attended and participated in meetings and brainstorming sessions with managers and peers.</li>
+                <li>Designed a site enhanced with navigation and visual appeal.</li>
+                <li>Followed course syllabus or lesson plan to perform and submit coursework and assignments.</li>
+            </ul>
+        </div>
+
+        <div class="experience-card">
+            <h2 class="experience-title">AP Computer Science Principals</h2>
+            <div class="experience-date">Aug 2021 – May 2022</div>
+            <div class="experience-location">Hagerty Highschool, Oviedo, FL</div>
+            <ul class="experience-details">
+                <li>Studied Python using CodeHS and PyCharm as IDE.</li>
+                <li>Created a final project using all the knowledge acquired during the course.</li>
+                <li>Maintained schedule of class assignments to meet deadlines.</li>
+                <li>Balanced school with extracurricular activities and built social connections for personal and professional growth.</li>
+            </ul>
+        </div>
+
+        <div class="experience-card">
+            <h2 class="experience-title">AP Computer Science A</h2>
+            <div class="experience-date">Aug 2021 – May 2022</div>
+            <div class="experience-location">Hagerty Highschool, Oviedo, FL</div>
+            <ul class="experience-details">
+                <li>Studied Java using CodeHS and IntelliJ IDEA as IDE.</li>
+                <li>Wrote, analyzed, and debugged code to meet curriculum requirements.</li>
+                <li>Volunteered at AP class Expo encouraging students to join computer science.</li>
+            </ul>
+        </div>
+    </main>
+
+    <script src="js/animations.js"></script>
+</body>
+</html>

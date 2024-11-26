@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications - Maria Goncharova</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        .certification-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .certification-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--color-teal), var(--color-purple));
+        }
+
+        .certification-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .certification-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--color-purple);
+        }
+
+        .certification-title {
+            color: var(--color-dark);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .verify-button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: linear-gradient(45deg, var(--color-teal), var(--color-purple));
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .verify-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .certifications-grid {
+                grid-template-columns: 1fr;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">MG</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="certifications.html" class="active">Certifications</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1 class="glitch-text">Certifications</h1>
+        
+        <div class="certifications-grid">
+            <div class="certification-card">
+                <i class="fab fa-java certification-icon"></i>
+                <h2 class="certification-title">Certified Java Developer</h2>
+                <a href="https://verify.w3schools.com/1N93979WUM" class="verify-button" target="_blank">
+                    Verify Certificate <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+
+            <div class="certification-card">
+                <i class="fas fa-code certification-icon"></i>
+                <h2 class="certification-title">Certified C Developer</h2>
+                <a href="https://verify.w3schools.com/1OJN415QHU" class="verify-button" target="_blank">
+                    Verify Certificate <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+
+            <div class="certification-card">
+                <i class="fab fa-python certification-icon"></i>
+                <h2 class="certification-title">Certified Python Developer</h2>
+                <a href="https://verify.w3schools.com/5X2E7WMBF" class="verify-button" target="_blank">
+                    Verify Certificate <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+
+            <div class="certification-card">
+                <i class="fab fa-html5 certification-icon"></i>
+                <h2 class="certification-title">Certified HTML Developer</h2>
+                <a href="https://verify.w3schools.com/5X00EDVDV" class="verify-button" target="_blank">
+                    Verify Certificate <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+
+            <div class="certification-card">
+                <i class="fab fa-css3-alt certification-icon"></i>
+                <h2 class="certification-title">Certified CSS Developer</h2>
+                <a href="https://verify.w3schools.com/1N682501AD" class="verify-button" target="_blank">
+                    Verify Certificate <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+
+            <div class="certification-card">
+                <i class="fas fa-database certification-icon"></i>
+                <h2 class="certification-title">Certified SQL Developer</h2>
+                <a href="https://verify.w3schools.com/1N682501AD" class="verify-button" target="_blank">
+                    Verify Certificate <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/animations.js"></script>
+</body>
+</html>
